@@ -5,6 +5,7 @@
       <search-bar/>
       <Map/>
     </div>
+    <custom-footer/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import Map from "./components/Map";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
 
 export default {
   name: "app",
   components: {
     Map,
     navbar: Navbar,
-    "search-bar": SearchBar
+    "search-bar": SearchBar,
+    "custom-footer": Footer
   }
 };
 </script>
@@ -31,8 +34,5 @@ export default {
   /* text-align: center; */
   color: #2c3e50;
   /* margin-top: 60px; */
-}
-#map {
-  height: 30rem;
 }
 </style>
