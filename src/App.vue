@@ -2,6 +2,7 @@
   <div id="app">
     <navbar/>
     <div id="map" class="container">
+      <search-bar/>
       <Map/>
     </div>
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Map from "./components/Map";
 import Navbar from "./components/Navbar";
+import SearchBar from "./components/SearchBar";
 
 export default {
   name: "app",
   components: {
     Map,
-    navbar: Navbar
+    navbar: Navbar,
+    "search-bar": SearchBar
   }
 };
 </script>
@@ -25,7 +28,7 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   /* margin-top: 60px; */
 }
