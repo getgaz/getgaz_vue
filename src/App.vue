@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navbar/>
-    <div class="container">
+    <div id="map" class="container">
       <Map/>
     </div>
   </div>
@@ -28,5 +28,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+}
+#map {
+  height: 30rem;
 }
 </style>
