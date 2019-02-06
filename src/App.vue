@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div>
-      <Map />
+    <navbar/>
+    <div id="map" class="container">
+      <search-bar/>
+      <Map/>
     </div>
+    <custom-footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Map from "./components/Map";
+import Navbar from "./components/Navbar";
+import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
     Map,
-  },
+    navbar: Navbar,
+    "search-bar": SearchBar,
+    "custom-footer": Footer
+  }
 };
 </script>
 
@@ -26,8 +31,8 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
