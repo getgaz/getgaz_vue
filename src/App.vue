@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div>
-      <Map />
+    <navbar/>
+    <div class="container">
+      <Map/>
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Map from "./components/Map";
+import Navbar from "./components/Navbar";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
     Map,
-  },
+    navbar: Navbar
+  }
 };
 </script>
 
@@ -28,6 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
