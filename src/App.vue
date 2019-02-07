@@ -4,6 +4,7 @@
     <div id="map" class="container">
       <search-bar/>
       <Map/>
+      <current-location/>
     </div>
     <custom-footer/>
   </div>
@@ -14,6 +15,7 @@ import Map from "./components/Map";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
+import CurrentLocation from "./components/CurrentLocation";
 
 export default {
   name: "app",
@@ -21,7 +23,8 @@ export default {
     Map,
     navbar: Navbar,
     "search-bar": SearchBar,
-    "custom-footer": Footer
+    "custom-footer": Footer,
+    "current-location": CurrentLocation
   }
 };
 </script>

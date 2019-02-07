@@ -9,7 +9,8 @@ export default new Vuex.Store({
   state: {
     locations: [],
     center: { lat: 37.7392, lng: -99.9903 },
-    zoom: 4.1
+    zoom: 4.1,
+    currentLocation: {}
   },
   mutations: {
     setLocations(state, locations) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     setCenter(state, position) {
       state.center = position;
+    },
+    setNewLocation(state, location) {
+      state.currentLocation = location;
     }
   },
   actions: {
@@ -43,6 +47,7 @@ export default new Vuex.Store({
       try {
         const locations = mockLocations;
         const markers = locations.map(location => ({
+          ...location,
           position: {
             lat: location.Site.Latitude,
             lng: location.Site.Longitude
@@ -54,6 +59,15 @@ export default new Vuex.Store({
       } catch (err) {
         console.error(err);
       }
+    },
+    reZoom({ commit }, { zoom }) {
+      commit("setZoom", zoom);
+    },
+    reCenter({ commit }, { position }) {
+      commit("setCenter", position);
+    },
+    updateCurrentLocation({ commit }, { location }) {
+      commit("setNewLocation", location);
     }
   }
 });
