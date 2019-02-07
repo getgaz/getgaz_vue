@@ -1,0 +1,2823 @@
+[
+    {
+      "Addresses": [
+        {
+          "Address1": "300 Arby Dr.",
+          "Address2": "",
+          "AddressId": 1209,
+          "AddressTypeId": 1,
+          "City": "Clanton",
+          "Comments": "",
+          "County": null,
+          "Name": "Clanton - 368",
+          "SpecialInstructions": "",
+          "State": "AL",
+          "Zip": "35045"
+        }
+      ],
+      "CustomFields": [
+        {
+          "CustomField": {
+            "Id": 411,
+            "Label": "Private Showers",
+            "Name": "PrivateShowers",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/shower.ashx",
+            "DisplayName": "Private Showers",
+            "SortOrder": 1,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 383,
+            "Label": "CAT Scales",
+            "Name": "CATScales",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/cat.ashx",
+            "DisplayName": "CAT Scales",
+            "SortOrder": 2,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 391,
+            "Label": "Wireless Internet",
+            "Name": "WirelessInternet",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/internet.ashx",
+            "DisplayName": "WiFi",
+            "SortOrder": 3,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        }
+    ],
+      "Site": {
+        "Concepts": [
+          {
+            "Concept": {
+              "Id": 4,
+              "IsActive": true,
+              "Name": "Arby's",
+              "ConceptIcon": "/-/media/Images/Amenities/Location-search/ArbysLogo.ashx",
+              "SortOrder": 1
+            },
+            "ConceptId": 4,
+            "IsLeased": false,
+            "SiteId": 368,
+            "FacilityStatusId": 4,
+            "LoyaltyTypeId": 1
+          }
+        ],
+        "DescriptiveAddress": "I-65, Exit 208",
+        "ExitNumber": "208",
+        "Highway": "I-65",
+        "Latitude": 32.844151,
+        "Longitude": -86.591963,
+        "SiteId": 368,
+        "SiteName": "Site 368",
+        "SiteNumber": 368
+      },
+      "FacilitySubtype": {
+        "Id": 3,
+        "Name": "Travel Stop"
+      },
+      "Name": "FlyingK Travel Stop - 368",
+      "Number": 368,
+      "SiteId": 368
+    },
+    {
+      "AcceptedPaymentTypes": [
+        {
+          "SiteManagementItem": {
+            "Title": "All Major Credit Cards",
+            "HideInSearch": false,
+            "SortOrder": 1,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Cash Accepted",
+            "HideInSearch": false,
+            "SortOrder": 2,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "ComCheck",
+            "HideInSearch": false,
+            "SortOrder": 3,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "EBT/SNAP Accepted",
+            "HideInSearch": false,
+            "SortOrder": 4,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Fleet One",
+            "HideInSearch": false,
+            "SortOrder": 5,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "EFS",
+            "HideInSearch": false,
+            "SortOrder": 6,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "FlyingK Express",
+            "HideInSearch": false,
+            "SortOrder": 7,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "MultiService",
+            "HideInSearch": false,
+            "SortOrder": 8,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "T-Chek",
+            "HideInSearch": false,
+            "SortOrder": 9,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "TCH",
+            "HideInSearch": false,
+            "SortOrder": 10,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "QuikQ FPS",
+            "HideInSearch": false,
+            "SortOrder": 11,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        }
+      ],
+      "AdditionalAmenities": [
+        {
+          "SiteManagementItem": {
+            "Title": "24-Hour Road Service",
+            "HideInSearch": false,
+            "SortOrder": 1,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Open 24-Hours",
+            "HideInSearch": false,
+            "SortOrder": 2,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Additives Available",
+            "HideInSearch": false,
+            "SortOrder": 3,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Calling Cards",
+            "HideInSearch": false,
+            "SortOrder": 4,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Check Cashing",
+            "HideInSearch": false,
+            "SortOrder": 5,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Copy & Fax Service",
+            "HideInSearch": false,
+            "SortOrder": 6,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "DEF Retail",
+            "HideInSearch": false,
+            "SortOrder": 7,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Overnight Parking",
+            "HideInSearch": false,
+            "SortOrder": 8,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Permit Fax",
+            "HideInSearch": false,
+            "SortOrder": 9,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Loyalty Program",
+            "HideInSearch": false,
+            "SortOrder": 10,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "TripPak Express",
+            "HideInSearch": false,
+            "SortOrder": 11,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        }
+      ],
+      "Addresses": [
+        {
+          "Address1": "16101 Hwy 84",
+          "Address2": "",
+          "AddressId": 842,
+          "AddressTypeId": 1,
+          "City": "Evergreen",
+          "Comments": "",
+          "County": null,
+          "Name": "Evergreen - 225",
+          "SpecialInstructions": "",
+          "State": "AL",
+          "Zip": "36401"
+        }
+      ],
+      "ContactMethods": [
+        {
+          "Type": {
+            "Id": 1,
+            "Name": "Main Phone",
+            "IsActive": true
+          },
+          "Id": 1534,
+          "ContactMethodTypeId": 1,
+          "Data": "(251) 578-4496"
+        },
+        {
+          "Type": {
+            "Id": 5,
+            "Name": "Fax",
+            "IsActive": true
+          },
+          "Id": 1536,
+          "ContactMethodTypeId": 5,
+          "Data": "(251) 578-4831"
+        },
+        {
+          "Type": {
+            "Id": 2,
+            "Name": "Main Email",
+            "IsActive": true
+          },
+          "Id": 279,
+          "ContactMethodTypeId": 2,
+          "Data": "Store225@example.com"
+        },
+        {
+          "Type": {
+            "Id": 4,
+            "Name": "Rollover Phone",
+            "IsActive": true
+          },
+          "Id": 1535,
+          "ContactMethodTypeId": 4,
+          "Data": "(251) 578-4652"
+        }
+      ],
+      "CustomFields": [
+        {
+          "CustomField": {
+            "Id": 411,
+            "Label": "Private Showers",
+            "Name": "PrivateShowers",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/shower.ashx",
+            "DisplayName": "Private Showers",
+            "SortOrder": 1,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 383,
+            "Label": "CAT Scales",
+            "Name": "CATScales",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/cat.ashx",
+            "DisplayName": "CAT Scales",
+            "SortOrder": 2,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 391,
+            "Label": "Wireless Internet",
+            "Name": "WirelessInternet",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/internet.ashx",
+            "DisplayName": "WiFi",
+            "SortOrder": 3,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 515,
+            "Label": "ATM",
+            "Name": "ATM",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/atm.ashx",
+            "DisplayName": "ATM",
+            "SortOrder": 4,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 13,
+            "Label": "Transflo",
+            "Name": "Transflo",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/transFlo.ashx",
+            "DisplayName": "Transflo",
+            "SortOrder": 5,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 371,
+            "Label": "Overnight Parking",
+            "Name": "OvernightParking",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/nightParking.ashx",
+            "DisplayName": "Truck Parking",
+            "SortOrder": 6,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 407,
+            "Label": "DEF Bulk Dispensers",
+            "Name": "DEFBulkDispensers",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/bulkDef.ashx",
+            "DisplayName": "Bulk DEF",
+            "SortOrder": 8,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 351,
+            "Label": "RF Service",
+            "Name": "RFService",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/rf.ashx",
+            "DisplayName": "RFID Pump Start",
+            "SortOrder": 9,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 387,
+            "Label": "National Tire Account",
+            "Name": "NationalTireAccount",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/tireCare.ashx",
+            "DisplayName": "Truck Tire Care",
+            "SortOrder": 10,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 535,
+            "Label": "Commercial Truck Oil Change",
+            "Name": "Commercial Truck Oil Cha",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/oil_icon_red_no_ring.ashx",
+            "DisplayName": "Commercial Truck Oil Change",
+            "SortOrder": 11,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 403,
+            "Label": "Light Mechanical",
+            "Name": "LightMechanical",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/LightMechanical.ashx",
+            "DisplayName": "Light Mechanical",
+            "SortOrder": 12,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 423,
+            "Label": "TirePass",
+            "Name": "TirePass",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/TirePass.ashx",
+            "DisplayName": "TirePass",
+            "SortOrder": 13,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 419,
+            "Label": "Bulk Propane",
+            "Name": "BulkPropane",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/propane.ashx",
+            "DisplayName": "Bulk Propane",
+            "SortOrder": 14,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        }
+      ],
+      "FilteredCustomFields": [
+        {
+          "CustomField": {
+            "Id": 347,
+            "Label": "Parking Spaces",
+            "Name": "ParkingSpaces",
+            "TypeName": "System.String",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "Number",
+            "FacilityLogo": null,
+            "DisplayName": "Truck Parking",
+            "SortOrder": 0,
+            "IncludeInExcelExport": false,
+            "Section": null
+          },
+          "CustomFieldId": 347,
+          "FacilityId": 225,
+          "Value": "95"
+        },
+        {
+          "CustomField": {
+            "Id": 343,
+            "Label": "DEF # of Lanes",
+            "Name": "DEF#ofLanes",
+            "TypeName": "System.String",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "Number",
+            "FacilityLogo": null,
+            "DisplayName": "DEF Lanes",
+            "SortOrder": 0,
+            "IncludeInExcelExport": false,
+            "Section": null
+          },
+          "CustomFieldId": 343,
+          "FacilityId": 225,
+          "Value": "8"
+        }
+      ],
+      "Site": {
+        "FuelPrices": [
+          {
+            "SiteId": 225,
+            "ProductId": 1,
+            "ProductName": "UNL-REGULAR",
+            "FuelType": "Unleaded",
+            "LastPriceChangeDateTime": "07/21/2017 09:10:39",
+            "LastCheckInDateTime": "07/21/2017 09:23:02",
+            "CashPrice": 2.059,
+            "CreditPrice": null,
+            "DisplayName": "UNLEADED",
+            "DisplayOrder": "1",
+            "Group": 0,
+            "OrderInGroup": 1
+          },
+          {
+            "SiteId": 225,
+            "ProductId": 8,
+            "ProductName": "UNL-PLUS B 66/34",
+            "FuelType": "Midgrade",
+            "LastPriceChangeDateTime": "07/21/2017 09:10:39",
+            "LastCheckInDateTime": "07/21/2017 09:23:02",
+            "CashPrice": 2.309,
+            "CreditPrice": null,
+            "DisplayName": "MIDGRADE",
+            "DisplayOrder": "2",
+            "Group": 0,
+            "OrderInGroup": 2
+          },
+          {
+            "SiteId": 225,
+            "ProductId": 2,
+            "ProductName": "UNL-SUPER",
+            "FuelType": "Premium",
+            "LastPriceChangeDateTime": "07/21/2017 09:10:39",
+            "LastCheckInDateTime": "07/21/2017 09:23:02",
+            "CashPrice": 2.559,
+            "CreditPrice": null,
+            "DisplayName": "PREMIUM",
+            "DisplayOrder": "3",
+            "Group": 0,
+            "OrderInGroup": 3
+          },
+          {
+            "SiteId": 225,
+            "ProductId": 3,
+            "ProductName": "DIESEL",
+            "FuelType": "Bio-Diesel B15",
+            "LastPriceChangeDateTime": "07/21/2017 09:10:39",
+            "LastCheckInDateTime": "07/21/2017 09:23:02",
+            "CashPrice": 2.429,
+            "CreditPrice": 2.479,
+            "DisplayName": "DIESEL B15",
+            "DisplayOrder": "11",
+            "Group": 1,
+            "OrderInGroup": 1
+          },
+          {
+            "SiteId": 225,
+            "ProductId": 5,
+            "ProductName": "DEF",
+            "FuelType": "Bulk DEF",
+            "LastPriceChangeDateTime": "07/21/2017 09:10:39",
+            "LastCheckInDateTime": "07/21/2017 09:23:02",
+            "CashPrice": 2.759,
+            "CreditPrice": null,
+            "DisplayName": "DEF",
+            "DisplayOrder": "12",
+            "Group": 1,
+            "OrderInGroup": 2
+          }
+        ],
+        "Concepts": [
+          {
+            "Concept": {
+              "Id": 4,
+              "IsActive": true,
+              "Name": "Arby's",
+              "ConceptIcon": "/-/media/Images/Amenities/Location-search/ArbysLogo.ashx",
+              "SortOrder": 1
+            },
+            "ConceptId": 4,
+            "IsLeased": false,
+            "SiteId": 225,
+            "FacilityStatusId": 4,
+            "LoyaltyTypeId": 1
+          }
+        ],
+        "CustomFields": null,
+        "Acreage": 0,
+        "AreaRoadsideManagerId": "",
+        "DescriptiveAddress": "I-65, Exit 93",
+        "DistrictId": 17,
+        "EmployeeRelationsSpecialistId": "",
+        "EnvironmentalManagerId": "",
+        "ExitNumber": "93",
+        "Highway": "I-65",
+        "Latitude": 31.419105,
+        "Longitude": -87.00765,
+        "LossPreventionSpecialistId": "",
+        "OwnerLessorId": 2,
+        "RiskManagementRepresentativeId": "",
+        "SiteId": 225,
+        "SiteName": "Site 225",
+        "SiteNumber": 225,
+        "SitePreferredName": "Evergreen",
+        "SiteRef": "47b67119-8445-4b8a-95d2-d0ded442a05e",
+        "SiteStatusId": 1,
+        "SiteTypeId": 1,
+        "UTCOffset": -6
+      },
+      "AreaManagerId": null,
+      "AuditorId": "000001523",
+      "ClosedDate": null,
+      "FacilityAreaId": null,
+      "FacilityId": 225,
+      "FacilityMaintenanceManagerId": null,
+      "FacilityManagerId": "000162956",
+      "FacilityRef": "5c8d532d-ebc1-e011-8b14-0050568d297a",
+      "FacilityStatusId": 4,
+      "FacilitySubTypeId": 3,
+      "FacilitySubtype": {
+        "Id": 3,
+        "Name": "Travel Stop"
+      },
+      "MatureDate": "07/01/2011 00:00:00",
+      "Name": "FlyingK Travel Stop - 225",
+      "Number": 225,
+      "OpenDate": "06/17/2010 00:00:00",
+      "PreferredName": "Evergreen",
+      "RecruiterId": "          ",
+      "SiteId": 225
+    },
+    {
+    "AcceptedPaymentTypes": [
+        {
+          "SiteManagementItem": {
+            "Title": "All Major Credit Cards",
+            "HideInSearch": false,
+            "SortOrder": 1,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Cash Accepted",
+            "HideInSearch": false,
+            "SortOrder": 2,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "ComCheck",
+            "HideInSearch": false,
+            "SortOrder": 3,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "EBT/SNAP Accepted",
+            "HideInSearch": false,
+            "SortOrder": 4,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Fleet One",
+            "HideInSearch": false,
+            "SortOrder": 5,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "EFS",
+            "HideInSearch": false,
+            "SortOrder": 6,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "FlyingK Express",
+            "HideInSearch": false,
+            "SortOrder": 7,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "MultiService",
+            "HideInSearch": false,
+            "SortOrder": 8,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "T-Chek",
+            "HideInSearch": false,
+            "SortOrder": 9,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "TCH",
+            "HideInSearch": false,
+            "SortOrder": 10,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "QuikQ FPS",
+            "HideInSearch": false,
+            "SortOrder": 11,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        }
+      ],
+      "AdditionalAmenities": [
+        {
+          "SiteManagementItem": {
+            "Title": "24-Hour Road Service",
+            "HideInSearch": false,
+            "SortOrder": 1,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Open 24-Hours",
+            "HideInSearch": false,
+            "SortOrder": 2,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Additives Available",
+            "HideInSearch": false,
+            "SortOrder": 3,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Calling Cards",
+            "HideInSearch": false,
+            "SortOrder": 4,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Check Cashing",
+            "HideInSearch": false,
+            "SortOrder": 5,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Copy & Fax Service",
+            "HideInSearch": false,
+            "SortOrder": 6,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "DEF Retail",
+            "HideInSearch": false,
+            "SortOrder": 7,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Overnight Parking",
+            "HideInSearch": false,
+            "SortOrder": 8,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Permit Fax",
+            "HideInSearch": false,
+            "SortOrder": 9,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "Loyalty Program",
+            "HideInSearch": false,
+            "SortOrder": 10,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        },
+        {
+          "SiteManagementItem": {
+            "Title": "TripPak Express",
+            "HideInSearch": false,
+            "SortOrder": 11,
+            "IncludeInExcelExport": false,
+            "Section": "Amenities"
+          }
+        }
+      ],
+      "Addresses": [
+        {
+          "Address1": "64 E. Pike Rd.",
+          "Address2": "",
+          "AddressId": 1244,
+          "AddressTypeId": 1,
+          "City": "Falkville",
+          "Comments": "",
+          "County": null,
+          "Name": "Falkville - 381",
+          "SpecialInstructions": "",
+          "State": "AL",
+          "Zip": "35622"
+        }
+      ],
+      "ContactMethods": [
+        {
+          "Type": {
+            "Id": 1,
+            "Name": "Main Phone",
+            "IsActive": true
+          },
+          "Id": 1825,
+          "ContactMethodTypeId": 1,
+          "Data": "(256) 784-6106"
+        },
+        {
+          "Type": {
+            "Id": 5,
+            "Name": "Fax",
+            "IsActive": true
+          },
+          "Id": 1829,
+          "ContactMethodTypeId": 5,
+          "Data": "(256) 784-6110"
+        },
+        {
+          "Type": {
+            "Id": 2,
+            "Name": "Main Email",
+            "IsActive": true
+          },
+          "Id": 1033,
+          "ContactMethodTypeId": 2,
+          "Data": "Store381@example.com"
+        },
+        {
+          "Type": {
+            "Id": 4,
+            "Name": "Rollover Phone",
+            "IsActive": true
+          },
+          "Id": 1827,
+          "ContactMethodTypeId": 4,
+          "Data": "(256) 784-6107"
+        }
+      ],
+      "CustomFields": [
+        {
+          "CustomField": {
+            "Id": 411,
+            "Label": "Private Showers",
+            "Name": "PrivateShowers",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/shower.ashx",
+            "DisplayName": "Private Showers",
+            "SortOrder": 1,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 383,
+            "Label": "CAT Scales",
+            "Name": "CATScales",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/cat.ashx",
+            "DisplayName": "CAT Scales",
+            "SortOrder": 2,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 391,
+            "Label": "Wireless Internet",
+            "Name": "WirelessInternet",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/internet.ashx",
+            "DisplayName": "WiFi",
+            "SortOrder": 3,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 515,
+            "Label": "ATM",
+            "Name": "ATM",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/atm.ashx",
+            "DisplayName": "ATM",
+            "SortOrder": 4,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 13,
+            "Label": "Transflo",
+            "Name": "Transflo",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/transFlo.ashx",
+            "DisplayName": "Transflo",
+            "SortOrder": 5,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 371,
+            "Label": "Overnight Parking",
+            "Name": "OvernightParking",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/nightParking.ashx",
+            "DisplayName": "Truck Parking",
+            "SortOrder": 6,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 359,
+            "Label": "RV Dump",
+            "Name": "RVDump",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/rvDump.ashx",
+            "DisplayName": "RV Dump Service",
+            "SortOrder": 7,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 407,
+            "Label": "DEF Bulk Dispensers",
+            "Name": "DEFBulkDispensers",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/bulkDef.ashx",
+            "DisplayName": "Bulk DEF",
+            "SortOrder": 8,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 351,
+            "Label": "RF Service",
+            "Name": "RFService",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/rf.ashx",
+            "DisplayName": "RFID Pump Start",
+            "SortOrder": 9,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 387,
+            "Label": "National Tire Account",
+            "Name": "NationalTireAccount",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/tireCare.ashx",
+            "DisplayName": "Truck Tire Care",
+            "SortOrder": 10,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 403,
+            "Label": "Light Mechanical",
+            "Name": "LightMechanical",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/LightMechanical.ashx",
+            "DisplayName": "Light Mechanical",
+            "SortOrder": 12,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 423,
+            "Label": "TirePass",
+            "Name": "TirePass",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/TirePass.ashx",
+            "DisplayName": "TirePass",
+            "SortOrder": 13,
+            "IncludeInExcelExport": true,
+            "Section": "Select Truck Services"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        },
+        {
+          "CustomField": {
+            "Id": 419,
+            "Label": "Bulk Propane",
+            "Name": "BulkPropane",
+            "TypeName": "System.Boolean",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "None",
+            "FacilityLogo": "/-/media/Images/Amenities/Location-search/propane.ashx",
+            "DisplayName": "Bulk Propane",
+            "SortOrder": 14,
+            "IncludeInExcelExport": true,
+            "Section": "Select Amenities"
+          },
+          "CustomFieldId": 0,
+          "FacilityId": 0,
+          "Value": null
+        }
+      ],
+      "FilteredCustomFields": [
+        {
+          "CustomField": {
+            "Id": 347,
+            "Label": "Parking Spaces",
+            "Name": "ParkingSpaces",
+            "TypeName": "System.String",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "Number",
+            "FacilityLogo": null,
+            "DisplayName": "Truck Parking",
+            "SortOrder": 0,
+            "IncludeInExcelExport": false,
+            "Section": null
+          },
+          "CustomFieldId": 347,
+          "FacilityId": 381,
+          "Value": "87"
+        },
+        {
+          "CustomField": {
+            "Id": 343,
+            "Label": "DEF # of Lanes",
+            "Name": "DEF#ofLanes",
+            "TypeName": "System.String",
+            "FacilitySubtypeId": 3,
+            "ValidationType": "Number",
+            "FacilityLogo": null,
+            "DisplayName": "DEF Lanes",
+            "SortOrder": 0,
+            "IncludeInExcelExport": false,
+            "Section": null
+          },
+          "CustomFieldId": 343,
+          "FacilityId": 381,
+          "Value": "7"
+        }
+      ],
+      "Site": {
+        "FuelPrices": [
+          {
+            "SiteId": 381,
+            "ProductId": 1,
+            "ProductName": "UNL-REGULAR",
+            "FuelType": "Unleaded",
+            "LastPriceChangeDateTime": "07/21/2017 14:11:16",
+            "LastCheckInDateTime": "07/21/2017 14:17:06",
+            "CashPrice": 1.899,
+            "CreditPrice": null,
+            "DisplayName": "UNLEADED",
+            "DisplayOrder": "1",
+            "Group": 0,
+            "OrderInGroup": 1
+          },
+          {
+            "SiteId": 381,
+            "ProductId": 8,
+            "ProductName": "UNL-PLUS B 66/34",
+            "FuelType": "Midgrade",
+            "LastPriceChangeDateTime": "07/21/2017 14:11:16",
+            "LastCheckInDateTime": "07/21/2017 14:17:06",
+            "CashPrice": 2.149,
+            "CreditPrice": null,
+            "DisplayName": "MIDGRADE",
+            "DisplayOrder": "2",
+            "Group": 0,
+            "OrderInGroup": 2
+          },
+          {
+            "SiteId": 381,
+            "ProductId": 2,
+            "ProductName": "UNL-SUPER",
+            "FuelType": "Premium",
+            "LastPriceChangeDateTime": "07/21/2017 14:11:16",
+            "LastCheckInDateTime": "07/21/2017 14:17:06",
+            "CashPrice": 2.399,
+            "CreditPrice": null,
+            "DisplayName": "PREMIUM",
+            "DisplayOrder": "3",
+            "Group": 0,
+            "OrderInGroup": 3
+          },
+          {
+            "SiteId": 381,
+            "ProductId": 3,
+            "ProductName": "DIESEL",
+            "FuelType": "Diesel",
+            "LastPriceChangeDateTime": "07/21/2017 14:11:16",
+            "LastCheckInDateTime": "07/21/2017 14:17:06",
+            "CashPrice": 2.429,
+            "CreditPrice": 2.479,
+            "DisplayName": "DIESEL",
+            "DisplayOrder": "12",
+            "Group": 1,
+            "OrderInGroup": 2
+          },
+          {
+            "SiteId": 381,
+            "ProductId": 5,
+            "ProductName": "DEF",
+            "FuelType": "Bulk DEF",
+            "LastPriceChangeDateTime": "07/21/2017 14:11:16",
+            "LastCheckInDateTime": "07/21/2017 14:17:06",
+            "CashPrice": 2.759,
+            "CreditPrice": null,
+            "DisplayName": "DEF",
+            "DisplayOrder": "12",
+            "Group": 1,
+            "OrderInGroup": 2
+          }
+        ],
+        "Concepts": [
+          {
+            "Concept": {
+              "Id": 1,
+              "IsActive": true,
+              "Name": "Subway",
+              "ConceptIcon": "/-/media/Images/Amenities/Location-search/Subway.ashx",
+              "SortOrder": 1
+            },
+            "ConceptId": 1,
+            "IsLeased": false,
+            "SiteId": 381,
+            "FacilityStatusId": 4,
+            "LoyaltyTypeId": 1
+          },
+          {
+            "Concept": {
+              "Id": 23,
+              "IsActive": true,
+              "Name": "McDonald's",
+              "ConceptIcon": "/-/media/Images/Amenities/Location-search/mcdonalds.ashx",
+              "SortOrder": 1
+            },
+            "ConceptId": 23,
+            "IsLeased": true,
+            "SiteId": 381,
+            "FacilityStatusId": 4,
+            "LoyaltyTypeId": 2
+          }
+        ],
+        "CustomFields": null,
+        "Acreage": 0,
+        "AreaRoadsideManagerId": "",
+        "DescriptiveAddress": "I-65, Exit 322",
+        "DistrictId": 14,
+        "EmployeeRelationsSpecialistId": "",
+        "EnvironmentalManagerId": "",
+        "ExitNumber": "322",
+        "Highway": "I-65",
+        "Latitude": 34.367333,
+        "Longitude": -86.89353,
+        "LossPreventionSpecialistId": "",
+        "OwnerLessorId": 2,
+        "RiskManagementRepresentativeId": "",
+        "SiteId": 381,
+        "SiteName": "Site 381",
+        "SiteNumber": 381,
+        "SitePreferredName": "Falkville",
+        "SiteRef": "d43907ef-4a4a-4aa6-bde7-7073a3f30a23",
+        "SiteStatusId": 1,
+        "SiteTypeId": 1,
+        "UTCOffset": -6
+      },
+      "AreaManagerId": null,
+      "AuditorId": "000001523",
+      "ClosedDate": null,
+      "FacilityAreaId": null,
+      "FacilityId": 381,
+      "FacilityMaintenanceManagerId": null,
+      "FacilityManagerId": "000003393",
+      "FacilityRef": "878e532d-ebc1-e011-8b14-0050568d297a",
+      "FacilityStatusId": 4,
+      "FacilitySubTypeId": 3,
+      "FacilitySubtype": {
+        "Id": 3,
+        "Name": "Travel Stop"
+      },
+      "MatureDate": "06/01/2009 00:00:00",
+      "Name": "FlyingK Travel Stop - 381",
+      "Number": 381,
+      "OpenDate": "05/29/2008 00:00:00",
+      "PreferredName": "Falkville",
+      "RecruiterId": "000001677 ",
+      "SiteId": 381
+    },
+    {
+        "AcceptedPaymentTypes": [
+          {
+            "SiteManagementItem": {
+              "Title": "All Major Credit Cards",
+              "HideInSearch": false,
+              "SortOrder": 1,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Cash Accepted",
+              "HideInSearch": false,
+              "SortOrder": 2,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "ComCheck",
+              "HideInSearch": false,
+              "SortOrder": 3,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "EBT/SNAP Accepted",
+              "HideInSearch": false,
+              "SortOrder": 4,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Fleet One",
+              "HideInSearch": false,
+              "SortOrder": 5,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "EFS",
+              "HideInSearch": false,
+              "SortOrder": 6,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "FlyingK Express",
+              "HideInSearch": false,
+              "SortOrder": 7,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "MultiService",
+              "HideInSearch": false,
+              "SortOrder": 8,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "T-Chek",
+              "HideInSearch": false,
+              "SortOrder": 9,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "TCH",
+              "HideInSearch": false,
+              "SortOrder": 10,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "QuikQ FPS",
+              "HideInSearch": false,
+              "SortOrder": 11,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          }
+        ],
+        "AdditionalAmenities": [
+          {
+            "SiteManagementItem": {
+              "Title": "24-Hour Road Service",
+              "HideInSearch": false,
+              "SortOrder": 1,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Open 24-Hours",
+              "HideInSearch": false,
+              "SortOrder": 2,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Additives Available",
+              "HideInSearch": false,
+              "SortOrder": 3,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Calling Cards",
+              "HideInSearch": false,
+              "SortOrder": 4,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Check Cashing",
+              "HideInSearch": false,
+              "SortOrder": 5,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Copy & Fax Service",
+              "HideInSearch": false,
+              "SortOrder": 6,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "DEF Retail",
+              "HideInSearch": false,
+              "SortOrder": 7,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Overnight Parking",
+              "HideInSearch": false,
+              "SortOrder": 8,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Permit Fax",
+              "HideInSearch": false,
+              "SortOrder": 9,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Loyalty Program",
+              "HideInSearch": false,
+              "SortOrder": 10,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "TripPak Express",
+              "HideInSearch": false,
+              "SortOrder": 11,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          }
+        ],
+        "Addresses": [
+          {
+            "Address1": "83 Carl Cannon Blvd",
+            "Address2": "",
+            "AddressId": 642,
+            "AddressTypeId": 1,
+            "City": "Jasper",
+            "Comments": "",
+            "County": null,
+            "Name": "Physical Address",
+            "SpecialInstructions": "",
+            "State": "AL",
+            "Zip": "35501"
+          }
+        ],
+        "ContactMethods": [
+          {
+            "Type": {
+              "Id": 2,
+              "Name": "Main Email",
+              "IsActive": true
+            },
+            "Id": 1472,
+            "ContactMethodTypeId": 2,
+            "Data": "Store466@example.com"
+          },
+          {
+            "Type": {
+              "Id": 5,
+              "Name": "Fax",
+              "IsActive": true
+            },
+            "Id": 2342,
+            "ContactMethodTypeId": 5,
+            "Data": "(205) 295-1709"
+          },
+          {
+            "Type": {
+              "Id": 1,
+              "Name": "Main Phone",
+              "IsActive": true
+            },
+            "Id": 2340,
+            "ContactMethodTypeId": 1,
+            "Data": "(205) 295-1706"
+          },
+          {
+            "Type": {
+              "Id": 4,
+              "Name": "Rollover Phone",
+              "IsActive": true
+            },
+            "Id": 2341,
+            "ContactMethodTypeId": 4,
+            "Data": "(205) 295-1707"
+          }
+        ],
+        "CustomFields": [
+          {
+            "CustomField": {
+              "Id": 411,
+              "Label": "Private Showers",
+              "Name": "PrivateShowers",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/shower.ashx",
+              "DisplayName": "Private Showers",
+              "SortOrder": 1,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 383,
+              "Label": "CAT Scales",
+              "Name": "CATScales",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/cat.ashx",
+              "DisplayName": "CAT Scales",
+              "SortOrder": 2,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 391,
+              "Label": "Wireless Internet",
+              "Name": "WirelessInternet",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/internet.ashx",
+              "DisplayName": "WiFi",
+              "SortOrder": 3,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 515,
+              "Label": "ATM",
+              "Name": "ATM",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/atm.ashx",
+              "DisplayName": "ATM",
+              "SortOrder": 4,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 13,
+              "Label": "Transflo",
+              "Name": "Transflo",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/transFlo.ashx",
+              "DisplayName": "Transflo",
+              "SortOrder": 5,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 371,
+              "Label": "Overnight Parking",
+              "Name": "OvernightParking",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/nightParking.ashx",
+              "DisplayName": "Truck Parking",
+              "SortOrder": 6,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 359,
+              "Label": "RV Dump",
+              "Name": "RVDump",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/rvDump.ashx",
+              "DisplayName": "RV Dump Service",
+              "SortOrder": 7,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 407,
+              "Label": "DEF Bulk Dispensers",
+              "Name": "DEFBulkDispensers",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/bulkDef.ashx",
+              "DisplayName": "Bulk DEF",
+              "SortOrder": 8,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 351,
+              "Label": "RF Service",
+              "Name": "RFService",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/rf.ashx",
+              "DisplayName": "RFID Pump Start",
+              "SortOrder": 9,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 387,
+              "Label": "National Tire Account",
+              "Name": "NationalTireAccount",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/tireCare.ashx",
+              "DisplayName": "Truck Tire Care",
+              "SortOrder": 10,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 403,
+              "Label": "Light Mechanical",
+              "Name": "LightMechanical",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/LightMechanical.ashx",
+              "DisplayName": "Light Mechanical",
+              "SortOrder": 12,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 423,
+              "Label": "TirePass",
+              "Name": "TirePass",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/TirePass.ashx",
+              "DisplayName": "TirePass",
+              "SortOrder": 13,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 419,
+              "Label": "Bulk Propane",
+              "Name": "BulkPropane",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/propane.ashx",
+              "DisplayName": "Bulk Propane",
+              "SortOrder": 14,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 530,
+              "Label": "Hotel Nearby",
+              "Name": "Hotel Nearby",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/hotelnearby.ashx",
+              "DisplayName": "Hotels Nearby",
+              "SortOrder": 18,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          }
+        ],
+        "FilteredCustomFields": [
+          {
+            "CustomField": {
+              "Id": 347,
+              "Label": "Parking Spaces",
+              "Name": "ParkingSpaces",
+              "TypeName": "System.String",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "Number",
+              "FacilityLogo": null,
+              "DisplayName": "Truck Parking",
+              "SortOrder": 0,
+              "IncludeInExcelExport": false,
+              "Section": null
+            },
+            "CustomFieldId": 347,
+            "FacilityId": 5463,
+            "Value": "65"
+          },
+          {
+            "CustomField": {
+              "Id": 343,
+              "Label": "DEF # of Lanes",
+              "Name": "DEF#ofLanes",
+              "TypeName": "System.String",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "Number",
+              "FacilityLogo": null,
+              "DisplayName": "DEF Lanes",
+              "SortOrder": 0,
+              "IncludeInExcelExport": false,
+              "Section": null
+            },
+            "CustomFieldId": 343,
+            "FacilityId": 5463,
+            "Value": "7"
+          }
+        ],
+        "Site": {
+          "FuelPrices": [
+            {
+              "SiteId": 467,
+              "ProductId": 1,
+              "ProductName": "UNL-REGULAR",
+              "FuelType": "Unleaded",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 1.999,
+              "CreditPrice": null,
+              "DisplayName": "UNLEADED",
+              "DisplayOrder": "1",
+              "Group": 0,
+              "OrderInGroup": 1
+            },
+            {
+              "SiteId": 467,
+              "ProductId": 8,
+              "ProductName": "UNL-PLUS B 66/34",
+              "FuelType": "Midgrade",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 2.249,
+              "CreditPrice": null,
+              "DisplayName": "MIDGRADE",
+              "DisplayOrder": "2",
+              "Group": 0,
+              "OrderInGroup": 2
+            },
+            {
+              "SiteId": 467,
+              "ProductId": 2,
+              "ProductName": "UNL-SUPER",
+              "FuelType": "Premium",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 2.499,
+              "CreditPrice": null,
+              "DisplayName": "PREMIUM",
+              "DisplayOrder": "3",
+              "Group": 0,
+              "OrderInGroup": 3
+            },
+            {
+              "SiteId": 467,
+              "ProductId": 3,
+              "ProductName": "DIESEL",
+              "FuelType": "Bio-Diesel B15",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 2.429,
+              "CreditPrice": 2.479,
+              "DisplayName": "DIESEL B15",
+              "DisplayOrder": "11",
+              "Group": 1,
+              "OrderInGroup": 1
+            },
+            {
+              "SiteId": 467,
+              "ProductId": 5,
+              "ProductName": "DEF",
+              "FuelType": "Bulk DEF",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 2.759,
+              "CreditPrice": null,
+              "DisplayName": "DEF",
+              "DisplayOrder": "12",
+              "Group": 1,
+              "OrderInGroup": 2
+            },
+            {
+              "SiteId": 467,
+              "ProductId": 60,
+              "ProductName": "Blk Propane Exempt",
+              "FuelType": "Propane",
+              "LastPriceChangeDateTime": "07/21/2017 09:18:40",
+              "LastCheckInDateTime": "07/21/2017 09:26:36",
+              "CashPrice": 3.499,
+              "CreditPrice": null,
+              "DisplayName": "PROPANE",
+              "DisplayOrder": "21",
+              "Group": 2,
+              "OrderInGroup": 1
+            }
+          ],
+          "Concepts": [
+            {
+              "Concept": {
+                "Id": 1,
+                "IsActive": true,
+                "Name": "Subway",
+                "ConceptIcon": "/-/media/Images/Amenities/Location-search/Subway.ashx",
+                "SortOrder": 1
+              },
+              "ConceptId": 1,
+              "IsLeased": false,
+              "SiteId": 467,
+              "FacilityStatusId": 4,
+              "LoyaltyTypeId": 1
+            },
+            {
+              "Concept": {
+                "Id": 23,
+                "IsActive": true,
+                "Name": "McDonald's",
+                "ConceptIcon": "/-/media/Images/Amenities/Location-search/mcdonalds.ashx",
+                "SortOrder": 1
+              },
+              "ConceptId": 23,
+              "IsLeased": true,
+              "SiteId": 467,
+              "FacilityStatusId": 4,
+              "LoyaltyTypeId": 2
+            }
+          ],
+          "CustomFields": null,
+          "Acreage": 9.55,
+          "AreaRoadsideManagerId": "",
+          "DescriptiveAddress": "I-22, Exit 65",
+          "DistrictId": 17,
+          "EmployeeRelationsSpecialistId": "",
+          "EnvironmentalManagerId": "",
+          "ExitNumber": "65",
+          "Highway": "I-22",
+          "Latitude": 33.790777,
+          "Longitude": -87.241662,
+          "LossPreventionSpecialistId": "",
+          "OwnerLessorId": 2,
+          "RiskManagementRepresentativeId": "",
+          "SiteId": 467,
+          "SiteName": "Site 466",
+          "SiteNumber": 466,
+          "SitePreferredName": "Jasper",
+          "SiteRef": "c40ddede-4108-46d2-84cc-eba5d84340f9",
+          "SiteStatusId": 1,
+          "SiteTypeId": 1,
+          "UTCOffset": -6
+        },
+        "AreaManagerId": null,
+        "AuditorId": null,
+        "ClosedDate": null,
+        "FacilityAreaId": null,
+        "FacilityId": 5463,
+        "FacilityMaintenanceManagerId": null,
+        "FacilityManagerId": "000005880",
+        "FacilityRef": "d0da0f4e-cedf-e011-8710-0050568d297a",
+        "FacilityStatusId": 4,
+        "FacilitySubTypeId": 3,
+        "FacilitySubtype": {
+          "Id": 3,
+          "Name": "Travel Stop"
+        },
+        "MatureDate": "06/01/2013 00:00:00",
+        "Name": "FlyingK Travel Stop - 466",
+        "Number": 466,
+        "OpenDate": "05/03/2012 00:00:00",
+        "PreferredName": "Jasper",
+        "RecruiterId": "          ",
+        "SiteId": 467
+      },
+      {
+        "AcceptedPaymentTypes": [
+          {
+            "SiteManagementItem": {
+              "Title": "All Major Credit Cards",
+              "HideInSearch": false,
+              "SortOrder": 1,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Cash Accepted",
+              "HideInSearch": false,
+              "SortOrder": 2,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "ComCheck",
+              "HideInSearch": false,
+              "SortOrder": 3,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "EBT/SNAP Accepted",
+              "HideInSearch": false,
+              "SortOrder": 4,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Fleet One",
+              "HideInSearch": false,
+              "SortOrder": 5,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "EFS",
+              "HideInSearch": false,
+              "SortOrder": 6,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "FlyingK Express",
+              "HideInSearch": false,
+              "SortOrder": 7,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "MultiService",
+              "HideInSearch": false,
+              "SortOrder": 8,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "T-Chek",
+              "HideInSearch": false,
+              "SortOrder": 9,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "TCH",
+              "HideInSearch": false,
+              "SortOrder": 10,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "QuikQ FPS",
+              "HideInSearch": false,
+              "SortOrder": 11,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          }
+        ],
+        "AdditionalAmenities": [
+          {
+            "SiteManagementItem": {
+              "Title": "24-Hour Road Service",
+              "HideInSearch": false,
+              "SortOrder": 1,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Open 24-Hours",
+              "HideInSearch": false,
+              "SortOrder": 2,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Additives Available",
+              "HideInSearch": false,
+              "SortOrder": 3,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Calling Cards",
+              "HideInSearch": false,
+              "SortOrder": 4,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Check Cashing",
+              "HideInSearch": false,
+              "SortOrder": 5,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Copy & Fax Service",
+              "HideInSearch": false,
+              "SortOrder": 6,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "DEF Retail",
+              "HideInSearch": false,
+              "SortOrder": 7,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Overnight Parking",
+              "HideInSearch": false,
+              "SortOrder": 8,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Permit Fax",
+              "HideInSearch": false,
+              "SortOrder": 9,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "Loyalty Program",
+              "HideInSearch": false,
+              "SortOrder": 10,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          },
+          {
+            "SiteManagementItem": {
+              "Title": "TripPak Express",
+              "HideInSearch": false,
+              "SortOrder": 11,
+              "IncludeInExcelExport": false,
+              "Section": "Amenities"
+            }
+          }
+        ],
+        "Addresses": [
+          {
+            "Address1": "126 E. Flying K Rd.",
+            "Address2": "",
+            "AddressId": 801,
+            "AddressTypeId": 1,
+            "City": "Loxley",
+            "Comments": "",
+            "County": null,
+            "Name": "Loxley - 206",
+            "SpecialInstructions": "",
+            "State": "AL",
+            "Zip": "36551"
+          }
+        ],
+        "ContactMethods": [
+          {
+            "Type": {
+              "Id": 1,
+              "Name": "Main Phone",
+              "IsActive": true
+            },
+            "Id": 1449,
+            "ContactMethodTypeId": 1,
+            "Data": "(251) 964-2090"
+          },
+          {
+            "Type": {
+              "Id": 4,
+              "Name": "Rollover Phone",
+              "IsActive": true
+            },
+            "Id": 1450,
+            "ContactMethodTypeId": 4,
+            "Data": "(251) 964-2091"
+          },
+          {
+            "Type": {
+              "Id": 5,
+              "Name": "Fax",
+              "IsActive": true
+            },
+            "Id": 1451,
+            "ContactMethodTypeId": 5,
+            "Data": "(251) 964-2092"
+          },
+          {
+            "Type": {
+              "Id": 2,
+              "Name": "Main Email",
+              "IsActive": true
+            },
+            "Id": 190,
+            "ContactMethodTypeId": 2,
+            "Data": "Store206@example.com"
+          }
+        ],
+        "CustomFields": [
+          {
+            "CustomField": {
+              "Id": 411,
+              "Label": "Private Showers",
+              "Name": "PrivateShowers",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/shower.ashx",
+              "DisplayName": "Private Showers",
+              "SortOrder": 1,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 383,
+              "Label": "CAT Scales",
+              "Name": "CATScales",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/cat.ashx",
+              "DisplayName": "CAT Scales",
+              "SortOrder": 2,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 391,
+              "Label": "Wireless Internet",
+              "Name": "WirelessInternet",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/internet.ashx",
+              "DisplayName": "WiFi",
+              "SortOrder": 3,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 515,
+              "Label": "ATM",
+              "Name": "ATM",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/atm.ashx",
+              "DisplayName": "ATM",
+              "SortOrder": 4,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 13,
+              "Label": "Transflo",
+              "Name": "Transflo",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/transFlo.ashx",
+              "DisplayName": "Transflo",
+              "SortOrder": 5,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 371,
+              "Label": "Overnight Parking",
+              "Name": "OvernightParking",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/nightParking.ashx",
+              "DisplayName": "Truck Parking",
+              "SortOrder": 6,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 359,
+              "Label": "RV Dump",
+              "Name": "RVDump",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/rvDump.ashx",
+              "DisplayName": "RV Dump Service",
+              "SortOrder": 7,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 407,
+              "Label": "DEF Bulk Dispensers",
+              "Name": "DEFBulkDispensers",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/bulkDef.ashx",
+              "DisplayName": "Bulk DEF",
+              "SortOrder": 8,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 351,
+              "Label": "RF Service",
+              "Name": "RFService",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/rf.ashx",
+              "DisplayName": "RFID Pump Start",
+              "SortOrder": 9,
+              "IncludeInExcelExport": true,
+              "Section": "Select Amenities"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 387,
+              "Label": "National Tire Account",
+              "Name": "NationalTireAccount",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/tireCare.ashx",
+              "DisplayName": "Truck Tire Care",
+              "SortOrder": 10,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 403,
+              "Label": "Light Mechanical",
+              "Name": "LightMechanical",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/LightMechanical.ashx",
+              "DisplayName": "Light Mechanical",
+              "SortOrder": 12,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          },
+          {
+            "CustomField": {
+              "Id": 423,
+              "Label": "TirePass",
+              "Name": "TirePass",
+              "TypeName": "System.Boolean",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "None",
+              "FacilityLogo": "/-/media/Images/Amenities/Location-search/TirePass.ashx",
+              "DisplayName": "TirePass",
+              "SortOrder": 13,
+              "IncludeInExcelExport": true,
+              "Section": "Select Truck Services"
+            },
+            "CustomFieldId": 0,
+            "FacilityId": 0,
+            "Value": null
+          }
+        ],
+        "FilteredCustomFields": [
+          {
+            "CustomField": {
+              "Id": 347,
+              "Label": "Parking Spaces",
+              "Name": "ParkingSpaces",
+              "TypeName": "System.String",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "Number",
+              "FacilityLogo": null,
+              "DisplayName": "Truck Parking",
+              "SortOrder": 0,
+              "IncludeInExcelExport": false,
+              "Section": null
+            },
+            "CustomFieldId": 347,
+            "FacilityId": 206,
+            "Value": "40"
+          },
+          {
+            "CustomField": {
+              "Id": 343,
+              "Label": "DEF # of Lanes",
+              "Name": "DEF#ofLanes",
+              "TypeName": "System.String",
+              "FacilitySubtypeId": 3,
+              "ValidationType": "Number",
+              "FacilityLogo": null,
+              "DisplayName": "DEF Lanes",
+              "SortOrder": 0,
+              "IncludeInExcelExport": false,
+              "Section": null
+            },
+            "CustomFieldId": 343,
+            "FacilityId": 206,
+            "Value": "6"
+          }
+        ],
+        "Site": {
+          "FuelPrices": [
+            {
+              "SiteId": 206,
+              "ProductId": 1,
+              "ProductName": "UNL-REGULAR",
+              "FuelType": "Unleaded",
+              "LastPriceChangeDateTime": "07/21/2017 09:20:27",
+              "LastCheckInDateTime": "07/21/2017 09:28:31",
+              "CashPrice": 2.099,
+              "CreditPrice": null,
+              "DisplayName": "UNLEADED",
+              "DisplayOrder": "1",
+              "Group": 0,
+              "OrderInGroup": 1
+            },
+            {
+              "SiteId": 206,
+              "ProductId": 8,
+              "ProductName": "UNL-PLUS B 66/34",
+              "FuelType": "Midgrade",
+              "LastPriceChangeDateTime": "07/21/2017 09:20:27",
+              "LastCheckInDateTime": "07/21/2017 09:28:31",
+              "CashPrice": 2.349,
+              "CreditPrice": null,
+              "DisplayName": "MIDGRADE",
+              "DisplayOrder": "2",
+              "Group": 0,
+              "OrderInGroup": 2
+            },
+            {
+              "SiteId": 206,
+              "ProductId": 2,
+              "ProductName": "UNL-SUPER",
+              "FuelType": "Premium",
+              "LastPriceChangeDateTime": "07/21/2017 09:20:27",
+              "LastCheckInDateTime": "07/21/2017 09:28:31",
+              "CashPrice": 2.599,
+              "CreditPrice": null,
+              "DisplayName": "PREMIUM",
+              "DisplayOrder": "3",
+              "Group": 0,
+              "OrderInGroup": 3
+            },
+            {
+              "SiteId": 206,
+              "ProductId": 3,
+              "ProductName": "DIESEL",
+              "FuelType": "Bio-Diesel B15",
+              "LastPriceChangeDateTime": "07/21/2017 09:20:27",
+              "LastCheckInDateTime": "07/21/2017 09:28:31",
+              "CashPrice": 2.449,
+              "CreditPrice": 2.499,
+              "DisplayName": "DIESEL B15",
+              "DisplayOrder": "11",
+              "Group": 1,
+              "OrderInGroup": 1
+            },
+            {
+              "SiteId": 206,
+              "ProductId": 5,
+              "ProductName": "DEF",
+              "FuelType": "Bulk DEF",
+              "LastPriceChangeDateTime": "07/21/2017 09:20:27",
+              "LastCheckInDateTime": "07/21/2017 09:28:31",
+              "CashPrice": 2.759,
+              "CreditPrice": null,
+              "DisplayName": "DEF",
+              "DisplayOrder": "12",
+              "Group": 1,
+              "OrderInGroup": 2
+            }
+          ],
+          "Concepts": [
+            {
+              "Concept": {
+                "Id": 4,
+                "IsActive": true,
+                "Name": "Arby's",
+                "ConceptIcon": "/-/media/Images/Amenities/Location-search/ArbysLogo.ashx",
+                "SortOrder": 1
+              },
+              "ConceptId": 4,
+              "IsLeased": false,
+              "SiteId": 206,
+              "FacilityStatusId": 4,
+              "LoyaltyTypeId": 1
+            }
+          ],
+          "CustomFields": null,
+          "Acreage": 0,
+          "AreaRoadsideManagerId": "",
+          "DescriptiveAddress": "I-10, Exit 44",
+          "DistrictId": 9,
+          "EmployeeRelationsSpecialistId": "",
+          "EnvironmentalManagerId": "",
+          "ExitNumber": "44",
+          "Highway": "I-10",
+          "Latitude": 30.654386,
+          "Longitude": -87.759422,
+          "LossPreventionSpecialistId": "",
+          "OwnerLessorId": 2,
+          "RiskManagementRepresentativeId": "",
+          "SiteId": 206,
+          "SiteName": "Site 206",
+          "SiteNumber": 206,
+          "SitePreferredName": "Loxley",
+          "SiteRef": "f9ab27d0-1c38-437e-a7e4-7d26c06a8c29",
+          "SiteStatusId": 1,
+          "SiteTypeId": 1,
+          "UTCOffset": -6
+        },
+        "AreaManagerId": null,
+        "AuditorId": null,
+        "ClosedDate": null,
+        "FacilityAreaId": null,
+        "FacilityId": 206,
+        "FacilityMaintenanceManagerId": null,
+        "FacilityManagerId": "000001455",
+        "FacilityRef": "398d532d-ebc1-e011-8b14-0050568d297a",
+        "FacilityStatusId": 4,
+        "FacilitySubTypeId": 3,
+        "FacilitySubtype": {
+          "Id": 3,
+          "Name": "Travel Stop"
+        },
+        "MatureDate": "11/01/2001 00:00:00",
+        "Name": "FlyingK Travel Stop - 206",
+        "Number": 206,
+        "OpenDate": "10/31/2000 00:00:00",
+        "PreferredName": "Loxley",
+        "RecruiterId": "000125842 ",
+        "SiteId": 206
+      }
+
+]
