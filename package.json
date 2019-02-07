@@ -10,20 +10,22 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
+    "migrate": "knex migrate:latest",
     "heroku-postbuild": "node data/import.js && yarn build"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
     "express": "^4.16.3",
+    "heroku-logger": "^0.3.3",
+    "jquery": "^3.3.1",
     "knex": "^0.15.2",
     "morgan": "^1.9.0",
     "pg": "^7.4.3",
+    "popper.js": "^1.14.7",
     "vue": "^2.5.16",
     "vue2-google-maps": "^0.10.1",
-    "vuex": "^3.0.1",
-    "bootstrap": "^4.2.1",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.10",
