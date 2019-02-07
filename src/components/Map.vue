@@ -13,7 +13,7 @@
           :key="location.key"
           :position="location.position"
           :animation="location.defaultAnimation"
-          @dblclick="markerRightClicked(location)"
+          @dblclick="markerDoubleClicked(location)"
         />
       </GmapMap>
     </div>
@@ -37,7 +37,7 @@ export default {
     getLocations() {
       this.$store.dispatch("loadMarkers");
     },
-    markerRightClicked(location) {
+    markerDoubleClicked(location) {
       this.$refs.mapRef.$mapPromise.then(map => {
         map.panTo(location.position);
       });
@@ -45,6 +45,8 @@ export default {
       this.$refs.mapRef.$mapPromise.then(() => {
         this.$store.dispatch("reZoom", { zoom: 13 });
       });
+
+      this.$store.dispatch("updateCurrentLocation", { location });
     },
     onZoomChange() {
       this.$refs.mapRef.$mapPromise.then(map => {
