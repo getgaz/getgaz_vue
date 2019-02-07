@@ -36,20 +36,22 @@
             <option>I-22</option>
             <option>I-65</option>
           </select>
-          <p class="state">test State : {{ selectedState }}</p>
+          <!-- <p class="state">test State : {{ selectedState }}</p>
           <p class="city">test City : {{ selectedCity }}</p>
-          <p class="highway">test Highway : {{ selectedHighway }}</p>
+          <p class="highway">test Highway : {{ selectedHighway }}</p> -->
 
         </div>
       </div>
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button">search</button>
+        <button class="btn btn-outline-secondary" type="button" v-on:click="onClickSearch">search</button>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+// <script>
+// import { loadMarkers } from "../utils/store";
+
 export default {
   state: "selectedState",
   city: "selectedCity",
@@ -58,7 +60,30 @@ export default {
     selectedState: "",
     selectedCity: "",
     selectedHighway: ""
-  })
+
+    // items:data.mock
+  }),
+
+  mounted() {
+    this.getLocations();
+  },
+
+  computed: {
+    locations() {
+      return this.$store.state.locations;
+    }
+    // google: gmapApi
+  },
+
+  methods: {
+    getLocations: function() {
+      this.$store.dispatch("loadMarkers");
+    },
+    onClickSearch: function() {
+      console.log(this.selectedState, this.selectedCity, this.selectedHighway);
+      console.log(this.locations[0].position);
+    }
+  }
 };
 </script>
 
