@@ -1,6 +1,6 @@
-const knex = require("knex");
+// Update with your config settings.
 
-const db = knex({
+module.exports = {
   client: "pg",
   connection:
     process.env.DATABASE_URL ||
@@ -9,6 +9,4 @@ const db = knex({
   migrations: {
     directory: "./migrations"
   }
-});
-
-module.exports = db;
+};
