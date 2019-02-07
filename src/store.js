@@ -54,6 +54,13 @@ export default new Vuex.Store({
       } catch (err) {
         console.error(err);
       }
+    },
+    reZoom({ commit }, { zoom }) {
+      console.log(zoom);
+      commit("setZoom", zoom);
+    },
+    reCenter({ commit }, { position }) {
+      commit("setCenter", position);
     }
   }
 });
