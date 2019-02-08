@@ -1,6 +1,8 @@
 <template>
-  <nav class="navbar navbar-dark footer mt-5">
-    <h5 class="navbar-brand">Made with ❤️ by us</h5>
+  <nav class="navbar navbar-dark footer mt-5 bg-dark">
+    <div class="container">
+      <small class="mx-auto footer_font-color">Made with ❤️ by the getgaz team</small>
+    </div>
   </nav>
 </template>
 
@@ -10,7 +12,8 @@ export default {};
 
 
 <style scoped>
-.footer {
-  background-color: #72a0ea;
+.footer_font-color {
+  font-size: 1.2rem;
+  color: #939393;
 }
 </style>
