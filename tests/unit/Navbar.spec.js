@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar.vue";
 
 describe("HelloWorld.vue", () => {
   it("renders props.msg when passed", () => {
-    const msg = "GetGaz";
+    const msg = "";
     const wrapper = shallowMount(Navbar, {
       propsData: { msg }
     });
