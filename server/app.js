@@ -45,6 +45,32 @@ app.get("/api/locations", async (req, res) => {
   }
 });
 
+app.get("/api/filters", async (req, res) => {
+  try {
+    const cities = await db
+      .select()
+      .table("locations")
+      .distinct("city")
+      .orderBy("city");
+
+    const states = await db
+      .select()
+      .table("locations")
+      .distinct("state")
+      .orderBy("state");
+
+    const highways = await db
+      .select()
+      .table("locations")
+      .distinct("highway")
+      .orderBy("highway");
+    res.json({ states, cities, highways });
+  } catch (err) {
+    console.error("Error loading filters", err);
+    res.sendStatus(500);
+  }
+});
+
 // Always return the main index.html, since we are developing a single page application
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "dist", "index.html"));

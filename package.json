@@ -11,7 +11,9 @@
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
     "migrate": "knex migrate:latest",
-    "heroku-postbuild": "node data/import.js && yarn build"
+    "rollback": "knex migrate:rollback",
+    "seed": "node data/import.js && node data/import2.js",
+    "heroku-postbuild": "yarn build && yarn migrate"
   },
   "dependencies": {
     "axios": "^0.18.0",
