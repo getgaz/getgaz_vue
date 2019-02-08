@@ -4,7 +4,10 @@
     <div id="map" class="container">
       <search-bar/>
       <Map/>
-      <current-location/>
+      <div>
+        <current-location v-if="this.$store.state.currentLocation.Addresses"/>
+        <all-locations v-else/>
+      </div>
     </div>
     <custom-footer/>
   </div>
@@ -16,6 +19,7 @@ import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
 import CurrentLocation from "./components/CurrentLocation";
+import AllLocations from "./components/AllLocations";
 
 export default {
   name: "app",
@@ -24,7 +28,8 @@ export default {
     navbar: Navbar,
     "search-bar": SearchBar,
     "custom-footer": Footer,
-    "current-location": CurrentLocation
+    "current-location": CurrentLocation,
+    "all-locations": AllLocations
   }
 };
 </script>
