@@ -13,7 +13,7 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "node data/import.js && node data/import2.js",
-    "heroku-postbuild": "yarn migrate && yarn seed && yarn build"
+    "heroku-postbuild": "yarn build && yarn migrate"
   },
   "dependencies": {
     "axios": "^0.18.0",
