@@ -12,6 +12,7 @@
           ${location.Addresses[0].Zip}`
           }}
         </label>
+        <h5 class="card-subtitle mt-2 text-muted mb-2">Amenities</h5>
         <ul class="list-group">
           <li
             v-for="(amenity, ind) in location.AdditionalAmenities"
