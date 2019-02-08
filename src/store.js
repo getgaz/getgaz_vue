@@ -68,7 +68,7 @@ export default new Vuex.Store({
       try {
         const { data: filters } = await axios.get("/api/filters");
         console.log(filters);
-        commit("setLocations", filters);
+        commit("setFilters", filters);
       } catch (err) {
         console.log(err);
       }
