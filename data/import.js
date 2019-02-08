@@ -13,6 +13,8 @@ const db = require("../server/knex.js");
       const city = location.Addresses[0].City;
       const state = location.Addresses[0].State;
       const zipcode = location.Addresses[0].Zip;
+      const highway = location.Site.Highway;
+      const exitNumber = location.Site.ExitNumber;
 
       const address = `${streetAddress}, ${city}, ${state}, ${zipcode}`;
 
@@ -21,7 +23,12 @@ const db = require("../server/knex.js");
         latitude,
         longitude,
         name,
-        address
+        address,
+        city,
+        state,
+        zip: zipcode,
+        highway,
+        exitNumber
       });
     }
     console.log("these are locations");

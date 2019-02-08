@@ -11,18 +11,26 @@ const util = require("util");
       for (const field of customFields) {
         const amenity_id = field.CustomField.Id;
         const amenity_display_name = field.CustomField.DisplayName;
+        let truck_service = field.CustomField.Section;
+        if (truck_service === "Select Truck Services") {
+          truck_service = true;
+        } else {
+          truck_service = false;
+        }
 
         const insert = await db("amenities")
           .insert({
             id: amenity_id,
-            display_name: amenity_display_name
+            display_name: amenity_display_name,
+            truck_service
           })
           .toString();
 
         const update = db("amenities")
           .update({
             id: amenity_id,
-            display_name: amenity_display_name
+            display_name: amenity_display_name,
+            truck_service
           })
           .whereRaw(`amenities.id = '${amenity_id}'`)
           .toString();
