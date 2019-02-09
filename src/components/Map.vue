@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-3">
+  <div class="card mb-3 bg-dark">
     <div class="card-body">
       <GmapMap
         :zoom="$store.state.zoom"

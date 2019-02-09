@@ -1,9 +1,9 @@
 <template>
-  <div class="card mb-3">
-    <div class="card-header">
+  <div class="card-custom mb-3 bg-orange">
+    <div class="card-header-custom bg-orange">
       <h3>Search</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body bg-dark">
       <div class="input-group mb-3">
         <div class="select-locations">
           <span class="title-locations">Locations:</span>
@@ -108,5 +108,30 @@ export default {
 .btn-btn-outline-secondary:hover {
   background-color: yellow;
   color: #000;
+}
+.bg-orange {
+  background-color: #d8b800;
+}
+
+.card-header-custom {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  color: inherit;
+  /* background-color: rgba(0,0,0,.03); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-custom {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  /* background-color: #fff; */
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 </style>
