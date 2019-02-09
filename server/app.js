@@ -26,13 +26,18 @@ app.get("/api/locations", async (req, res) => {
         .where({
           location_id: siteId
         })
-        .select("id", "display_name");
+        .select("id", "display_name", "truck_service");
       const result = {
         site_id: location.site_id,
         name: location.name,
         latitude: location.latitude,
         longitude: location.longitude,
         address: location.address,
+        exitNumber: location.exitNumber,
+        highway: location.highway,
+        city: location.city,
+        state: location.state,
+        zip: location.zip,
         amenities: amenities
       };
       results.push(result);
@@ -64,7 +69,11 @@ app.get("/api/filters", async (req, res) => {
       .table("locations")
       .distinct("highway")
       .orderBy("highway");
-    res.json({ states, cities, highways });
+    res.json({
+      states,
+      cities,
+      highways
+    });
   } catch (err) {
     console.error("Error loading filters", err);
     res.sendStatus(500);
