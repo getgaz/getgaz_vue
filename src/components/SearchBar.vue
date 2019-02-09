@@ -5,59 +5,38 @@
     </div>
     <div class="card-body">
       <div class="input-group mb-3">
-        <!-- <input
-          type="text"
-          class="form-control"
-          placeholder="Filter locations"
-          aria-label="Filter locations"
-          aria-describedby="basic-addon2"
-        > -->
           <div class="select-locations">
-          <span>Locations:</span>
+          <span class="title-locations">Locations:</span>
           <select v-model="selectedState">
             <option disabled value="">State</option>
-            <option>AL</option>
-            <option>AK</option>
-            <option>AZ</option>
-            <option>AR</option>
+            <option v-for="(stateItem, ind) in this.$store.state.filters.states" :key="ind">
+              {{ stateItem.state }}
+            </option>
           </select>
 
-          <!-- <select v-model="selectedCity" v-for="city in cities">
-             -->
           <select v-model="selectedCity">
-            <!-- <option disabled value="">{{city}}</option> -->
             <option disabled value="">City</option>
-            <option>Clanton</option>
-            <option>Evergreen</option>
-            <option>Falkville</option>
-            <option>Jasper</option>
-            <option>Loxley</option>
+            <option v-for="(cityItem, ind) in this.$store.state.filters.cities" :key="ind">
+              {{ cityItem.city }}
+            </option>
           </select>
 
           <select v-model="selectedHighway">
             <option disabled value="">Highway</option>
-            <option>I-10, Exit 44</option>
-            <option>I-22, Exit 65</option>
-            <option>I-65, Exit 322</option>
-            <option>I-65, Exit 93</option>
-            <option>I-65, Exit 208</option>
+            <option v-for="(highwayItem, ind) in this.$store.state.filters.highways" :key="ind">
+              {{ highwayItem.highway }}
+            </option>
           </select>
-          <!-- <p class="state">test State : {{ selectedState }}</p>
-          <p class="city">test City : {{ selectedCity }}</p>
-          <p class="highway">test Highway : {{ selectedHighway }}</p> -->
-
         </div>
       </div>
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" v-on:click="onClickSearch">search</button>
+        <button class="btn-btn-outline-secondary" type="button" v-on:click="onClickSearch">search</button>
       </div>
     </div>
   </div>
 </template>
 
-// <script>
-// import { loadMarkers } from "../utils/store";
-
+<script>
 export default {
   state: "selectedState",
   city: "selectedCity",
@@ -66,25 +45,29 @@ export default {
     selectedState: "",
     selectedCity: "",
     selectedHighway: ""
-
-    // items:data.mock
   }),
 
   mounted() {
     this.getLocations();
+    this.getFilters();
   },
 
   computed: {
     locations() {
       return this.$store.state.locations;
     }
-    // google: gmapApi
   },
 
   methods: {
     getLocations: function() {
       this.$store.dispatch("loadMarkers");
     },
+
+    getFilters: function() {
+      console.log("loading filters");
+      this.$store.dispatch("loadFilters");
+    },
+
     onClickSearch: function() {
       console.log(
         "selected",
@@ -95,19 +78,12 @@ export default {
         "highway:",
         this.selectedHighway
       );
-      // console.log(this.locations[0].position);
       const loco = this.$store.state.locations;
-      // console.log(this.$store.state.locations[0].Addresses[0].City); // one city
-      // console.log(this.$store.state.locations[0].Addresses[0].State); // one state
-      // console.log(this.$store.state.locations[0].Site.DescriptiveAddress); //one highway
-
-      // if(typeof this.selectedState === "undefined" && typeof this.selectedCity === "undefined" && typeof this.selectedHighway === "undefined"){
       if (
         this.selectedState === "" &&
         this.selectedCity === "" &&
         this.selectedHighway === ""
       ) {
-        // console.log("this.locations", this.locations);
         console.log("all locations", loco);
         return loco;
       } else if (this.selectedHighway !== "") {
@@ -133,10 +109,7 @@ export default {
       }
       let resultArray = [];
       for (let i = 0; i < loco.length; i++) {
-        // console.log("loco", loco[i]);
-        // console.log("hoge", loco[i].Addresses.length);
         for (let j = 0; j < loco[i].Addresses.length; j++) {
-          // if(loco[i].Addresses[j].State === this.selectedState || loco[i].Addresses[j].City === this.selectedCity){
           if (loco[i].Addresses[j].State === this.selectedState) {
             resultArray = resultArray.concat(loco[i]);
           }
@@ -145,11 +118,20 @@ export default {
       console.log("filtered by state", resultArray);
       return resultArray;
     }
-
-    //this.$store.state.locations[0].Addresses[0].City
   }
 };
 </script>
 
 <style>
+.title-location {
+  font-family: sans-serif;
+}
+.btn-btn-outline-secondary {
+  background-color: #333;
+  color: #fff;
+}
+.btn-btn-outline-secondary:hover {
+  background-color: yellow;
+  color: #000;
+}
 </style>
