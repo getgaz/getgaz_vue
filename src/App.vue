@@ -11,7 +11,7 @@
     </div>
     <div id="map" class="container">
       <div>
-        <current-location v-if="this.$store.state.currentLocation.Addresses"/>
+        <current-location v-if="this.$store.state.currentLocation.address"/>
         <all-locations v-else/>
       </div>
     </div>

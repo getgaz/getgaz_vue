@@ -6,19 +6,16 @@
         <h5 class="card-subtitle mb-2 text-muted">Address</h5>
         <label class="ml-2">
           {{
-          `${location.Addresses[0].Address1},
-          ${location.Addresses[0].City},
-          ${location.Addresses[0].State},
-          ${location.Addresses[0].Zip}`
+          `${location.address}`
           }}
         </label>
         <h5 class="card-subtitle mt-2 text-muted mb-2">Amenities</h5>
         <ul class="list-group">
           <li
-            v-for="(amenity, ind) in location.AdditionalAmenities"
+            v-for="(amenity, ind) in location.amenities"
             :key="ind"
             class="list-group-item"
-          >{{amenity.SiteManagementItem.Title}}</li>
+          >{{amenity.display_name}}</li>
         </ul>
       </div>
     </div>
