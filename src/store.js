@@ -64,6 +64,9 @@ export default new Vuex.Store({
     },
     updateCurrentLocation({ commit }, { location }) {
       commit("setNewLocation", location);
+    },
+    filterLocations({ commit }, { locations }) {
+      commit("setLocations", locations);
     }
   }
 });
