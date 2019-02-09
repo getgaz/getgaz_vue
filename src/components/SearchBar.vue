@@ -5,27 +5,30 @@
     </div>
     <div class="card-body">
       <div class="input-group mb-3">
-          <div class="select-locations">
+        <div class="select-locations">
           <span class="title-locations">Locations:</span>
           <select v-model="selectedState">
-            <option disabled value="">State</option>
-            <option v-for="(stateItem, ind) in this.$store.state.filters.states" :key="ind">
-              {{ stateItem.state }}
-            </option>
+            <option disabled value>State</option>
+            <option
+              v-for="(stateItem, ind) in this.$store.state.filters.states"
+              :key="ind"
+            >{{ stateItem.state }}</option>
           </select>
-
+          
           <select v-model="selectedCity">
-            <option disabled value="">City</option>
-            <option v-for="(cityItem, ind) in this.$store.state.filters.cities" :key="ind">
-              {{ cityItem.city }}
-            </option>
+            <option disabled value>City</option>
+            <option
+              v-for="(cityItem, ind) in this.$store.state.filters.cities"
+              :key="ind"
+            >{{ cityItem.city }}</option>
           </select>
-
+          
           <select v-model="selectedHighway">
-            <option disabled value="">Highway</option>
-            <option v-for="(highwayItem, ind) in this.$store.state.filters.highways" :key="ind">
-              {{ highwayItem.highway }}
-            </option>
+            <option disabled value>Highway</option>
+            <option
+              v-for="(highwayItem, ind) in this.$store.state.filters.highways"
+              :key="ind"
+            >{{ highwayItem.highway }}</option>
           </select>
         </div>
       </div>
@@ -69,54 +72,26 @@ export default {
     },
 
     onClickSearch: function() {
-      console.log(
-        "selected",
-        "state:",
-        this.selectedState,
-        "city:",
-        this.selectedCity,
-        "highway:",
-        this.selectedHighway
-      );
-      const loco = this.$store.state.locations;
-      if (
-        this.selectedState === "" &&
-        this.selectedCity === "" &&
-        this.selectedHighway === ""
-      ) {
-        console.log("all locations", loco);
-        // return loco;
-        this.$store.dispatch("filterLocations", loco);
-      } else if (this.selectedHighway !== "") {
-        let resultArray = [];
-        for (let i = 0; i < loco.length; i++) {
-          if (loco[i].highway === this.selectedHighway) {
-            resultArray = resultArray.concat(loco[i]);
-          }
-        }
-        console.log("filtered by highway", resultArray);
-        // return resultArray;
-        this.$store.dispatch("filterLocations", resultArray);
-      } else if (this.selectedCity !== "") {
-        let resultArray = [];
-        for (let i = 0; i < loco.length; i++) {
-          if (loco[i].city === this.selectedCity) {
-            resultArray = resultArray.concat(loco[i]);
-          }
-        }
-        console.log("filtered by city", resultArray);
-        // return resultArray;
-        this.$store.dispatch("filterLocations", resultArray);
+      let result = this.$store.state.locations.slice();
+
+      if (this.selectedState !== "") {
+        result = result.filter(location => {
+          return location.state === this.selectedState;
+        });
       }
-      let resultArray = [];
-      for (let i = 0; i < loco.length; i++) {
-        if (loco[i].state === this.selectedState) {
-          resultArray = resultArray.concat(loco[i]);
-        }
+
+      if (this.selectedCity !== "") {
+        result = result.filter(location => {
+          return location.city === this.selectedCity;
+        });
       }
-      console.log("filtered by state", resultArray);
-      // return resultArray;
-      this.$store.dispatch("filterLocations", resultArray);
+
+      if (this.selectedHighway !== "") {
+        result = result.filter(location => {
+          return location.highway === this.selectedHighway;
+        });
+      }
+      this.$store.dispatch("filterLocations", result);
     }
   }
 };

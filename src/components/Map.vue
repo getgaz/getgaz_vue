@@ -26,6 +26,7 @@ import { gmapApi } from "vue2-google-maps";
 export default {
   mounted() {
     this.getLocations();
+    console.log("this is locations in map", this.$store.state.locations);
   },
   computed: {
     locations() {
