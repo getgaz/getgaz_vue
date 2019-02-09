@@ -85,38 +85,38 @@ export default {
         this.selectedHighway === ""
       ) {
         console.log("all locations", loco);
-        return loco;
+        // return loco;
+        this.$store.dispatch("filterLocations", loco);
       } else if (this.selectedHighway !== "") {
         let resultArray = [];
         for (let i = 0; i < loco.length; i++) {
-          if (loco[i].Site.DescriptiveAddress === this.selectedHighway) {
+          if (loco[i].highway === this.selectedHighway) {
             resultArray = resultArray.concat(loco[i]);
           }
         }
         console.log("filtered by highway", resultArray);
-        return resultArray;
+        // return resultArray;
+        this.$store.dispatch("filterLocations", resultArray);
       } else if (this.selectedCity !== "") {
         let resultArray = [];
         for (let i = 0; i < loco.length; i++) {
-          for (let j = 0; j < loco[i].Addresses.length; j++) {
-            if (loco[i].Addresses[j].City === this.selectedCity) {
-              resultArray = resultArray.concat(loco[i]);
-            }
-          }
-        }
-        console.log("filtered by city", resultArray);
-        return resultArray;
-      }
-      let resultArray = [];
-      for (let i = 0; i < loco.length; i++) {
-        for (let j = 0; j < loco[i].Addresses.length; j++) {
-          if (loco[i].Addresses[j].State === this.selectedState) {
+          if (loco[i].city === this.selectedCity) {
             resultArray = resultArray.concat(loco[i]);
           }
         }
+        console.log("filtered by city", resultArray);
+        // return resultArray;
+        this.$store.dispatch("filterLocations", resultArray);
+      }
+      let resultArray = [];
+      for (let i = 0; i < loco.length; i++) {
+        if (loco[i].state === this.selectedState) {
+          resultArray = resultArray.concat(loco[i]);
+        }
       }
       console.log("filtered by state", resultArray);
-      return resultArray;
+      // return resultArray;
+      this.$store.dispatch("filterLocations", resultArray);
     }
   }
 };
