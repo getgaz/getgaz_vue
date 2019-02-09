@@ -17,8 +17,33 @@ app.use(express.static(path.resolve(__dirname, "..", "dist")));
 
 app.get("/api/locations", async (req, res) => {
   try {
-    const locations = await db.select().table("locations");
-    res.json(locations);
+    const results = [];
+    const locations = await db("locations").select();
+    for (const location of locations) {
+      const siteId = location.site_id;
+      const amenities = await db("location_amenity")
+        .innerJoin("amenities", "location_amenity.amenity_id", "amenities.id")
+        .where({
+          location_id: siteId
+        })
+        .select("id", "display_name", "truck_service");
+      const result = {
+        site_id: location.site_id,
+        name: location.name,
+        latitude: location.latitude,
+        longitude: location.longitude,
+        address: location.address,
+        exitNumber: location.exitNumber,
+        highway: location.highway,
+        city: location.city,
+        state: location.state,
+        zip: location.zip,
+        amenities: amenities
+      };
+      results.push(result);
+    }
+
+    res.json(results);
   } catch (err) {
     console.error("Error loading locations!", err);
     res.sendStatus(500);
@@ -44,7 +69,11 @@ app.get("/api/filters", async (req, res) => {
       .table("locations")
       .distinct("highway")
       .orderBy("highway");
-    res.json({ states, cities, highways });
+    res.json({
+      states,
+      cities,
+      highways
+    });
   } catch (err) {
     console.error("Error loading filters", err);
     res.sendStatus(500);
