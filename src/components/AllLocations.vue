@@ -2,7 +2,7 @@
   <div>
     <div class="card mb-3" v-for="(location, index) in this.$store.state.locations" :key="index">
       <div class="card-header">{{location.key}}</div>
-      <div class="card-body">
+      <div class="card-body bg-dark">
         <h5 class="card-subtitle mb-2 text-muted">Address</h5>
         <label class="ml-2">
           {{
@@ -14,7 +14,7 @@
           <li
             v-for="(amenity, ind) in location.amenities"
             :key="ind"
-            class="list-group-item"
+            class="list-group-item-custom bg-custom"
           >{{amenity.display_name}}</li>
         </ul>
       </div>
@@ -29,4 +29,14 @@ export default {};
 
 
 <style>
+.list-group-item-custom {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.bg-custom {
+  background-color: #c0c1c4;
+}
 </style>

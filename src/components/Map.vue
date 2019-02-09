@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-3">
+  <div class="card mb-3 bg-dark">
     <div class="card-body">
       <GmapMap
         :zoom="$store.state.zoom"
@@ -26,6 +26,7 @@ import { gmapApi } from "vue2-google-maps";
 export default {
   mounted() {
     this.getLocations();
+    console.log("this is locations in map", this.$store.state.locations);
   },
   computed: {
     locations() {

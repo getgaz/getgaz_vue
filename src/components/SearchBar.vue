@@ -1,31 +1,34 @@
 <template>
-  <div class="card mb-3">
-    <div class="card-header">
+  <div class="card-custom mb-3 bg-orange">
+    <div class="card-header-custom bg-orange">
       <h3>Search</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body bg-dark">
       <div class="input-group mb-3">
-          <div class="select-locations">
+        <div class="select-locations">
           <span class="title-locations">Locations:</span>
           <select v-model="selectedState">
-            <option disabled value="">State</option>
-            <option v-for="(stateItem, ind) in this.$store.state.filters.states" :key="ind">
-              {{ stateItem.state }}
-            </option>
+            <option disabled value>State</option>
+            <option
+              v-for="(stateItem, ind) in this.$store.state.filters.states"
+              :key="ind"
+            >{{ stateItem.state }}</option>
           </select>
-
+          
           <select v-model="selectedCity">
-            <option disabled value="">City</option>
-            <option v-for="(cityItem, ind) in this.$store.state.filters.cities" :key="ind">
-              {{ cityItem.city }}
-            </option>
+            <option disabled value>City</option>
+            <option
+              v-for="(cityItem, ind) in this.$store.state.filters.cities"
+              :key="ind"
+            >{{ cityItem.city }}</option>
           </select>
-
+          
           <select v-model="selectedHighway">
-            <option disabled value="">Highway</option>
-            <option v-for="(highwayItem, ind) in this.$store.state.filters.highways" :key="ind">
-              {{ highwayItem.highway }}
-            </option>
+            <option disabled value>Highway</option>
+            <option
+              v-for="(highwayItem, ind) in this.$store.state.filters.highways"
+              :key="ind"
+            >{{ highwayItem.highway }}</option>
           </select>
         </div>
       </div>
@@ -69,54 +72,26 @@ export default {
     },
 
     onClickSearch: function() {
-      console.log(
-        "selected",
-        "state:",
-        this.selectedState,
-        "city:",
-        this.selectedCity,
-        "highway:",
-        this.selectedHighway
-      );
-      const loco = this.$store.state.locations;
-      if (
-        this.selectedState === "" &&
-        this.selectedCity === "" &&
-        this.selectedHighway === ""
-      ) {
-        console.log("all locations", loco);
-        // return loco;
-        this.$store.dispatch("filterLocations", loco);
-      } else if (this.selectedHighway !== "") {
-        let resultArray = [];
-        for (let i = 0; i < loco.length; i++) {
-          if (loco[i].highway === this.selectedHighway) {
-            resultArray = resultArray.concat(loco[i]);
-          }
-        }
-        console.log("filtered by highway", resultArray);
-        // return resultArray;
-        this.$store.dispatch("filterLocations", resultArray);
-      } else if (this.selectedCity !== "") {
-        let resultArray = [];
-        for (let i = 0; i < loco.length; i++) {
-          if (loco[i].city === this.selectedCity) {
-            resultArray = resultArray.concat(loco[i]);
-          }
-        }
-        console.log("filtered by city", resultArray);
-        // return resultArray;
-        this.$store.dispatch("filterLocations", resultArray);
+      let result = this.$store.state.locations.slice();
+
+      if (this.selectedState !== "") {
+        result = result.filter(location => {
+          return location.state === this.selectedState;
+        });
       }
-      let resultArray = [];
-      for (let i = 0; i < loco.length; i++) {
-        if (loco[i].state === this.selectedState) {
-          resultArray = resultArray.concat(loco[i]);
-        }
+
+      if (this.selectedCity !== "") {
+        result = result.filter(location => {
+          return location.city === this.selectedCity;
+        });
       }
-      console.log("filtered by state", resultArray);
-      // return resultArray;
-      this.$store.dispatch("filterLocations", resultArray);
+
+      if (this.selectedHighway !== "") {
+        result = result.filter(location => {
+          return location.highway === this.selectedHighway;
+        });
+      }
+      this.$store.dispatch("filterLocations", result);
     }
   }
 };
@@ -133,5 +108,30 @@ export default {
 .btn-btn-outline-secondary:hover {
   background-color: yellow;
   color: #000;
+}
+.bg-orange {
+  background-color: #d8b800;
+}
+
+.card-header-custom {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  color: inherit;
+  /* background-color: rgba(0,0,0,.03); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-custom {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  /* background-color: #fff; */
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 </style>
