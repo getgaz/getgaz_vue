@@ -6,10 +6,10 @@ A finding stations application powered by Vue
 
 ### Prerequisites
 
-<img src="img/vue_logo.png" width="150" height=150/>
-<img src="img/circle-logo-horizontal-black.png" width="200" height=100/>
-<img src="img/heroku.png" width="100" height="150"/>
-<img src="img/postgresql-logo.png" width="150" height="150"/>
+<img src="img/vue_logo.png" width="150"/>
+<img src="img/circle-logo-horizontal-black.png" width="200"/>
+<img src="img/heroku.png" width="100"/>
+<img src="img/postgresql-logo.png" width="150"/>
 
 ### Installing
 
@@ -64,7 +64,7 @@ Run yarn test
 $ yarn test
 ```
 
-## Deployment¥
+## Deployment
 
 1. Run yarn build
 
@@ -82,7 +82,8 @@ _Also, you can use "yarn hack" for development_
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change.
 
 ## Authors
 
@@ -94,5 +95,3 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
