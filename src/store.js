@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
-const mockLocations = require("../data/mock.json");
 
 Vue.use(Vuex);
 
@@ -31,32 +30,16 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    // async loadMarkers({ commit }) {
-    //   try {
-    //     const { data: locations } = await axios.get("/api/locations"); // ES6 destructuring & aliasing
-    //     const markers = locations.map(location => ({
-    //       position: {
-    //         lat: location.latitude,
-    //         lng: location.longitude
-    //       },
-    //       key: location.name,
-    //       defaultAnimation: 2
-    //     }));
-    //     commit("setLocations", markers);
-    //   } catch (err) {
-    //     console.error(err);
-    //   }
-    // }
     async loadMarkers({ commit }) {
       try {
-        const locations = mockLocations;
+        const { data: locations } = await axios.get("/api/locations"); // ES6 destructuring & aliasing
         const markers = locations.map(location => ({
           ...location,
           position: {
-            lat: location.Site.Latitude,
-            lng: location.Site.Longitude
+            lat: location.latitude,
+            lng: location.longitude
           },
-          key: location.Name,
+          key: location.name,
           defaultAnimation: 2
         }));
         commit("setLocations", markers);
