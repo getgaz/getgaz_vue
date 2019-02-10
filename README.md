@@ -1,6 +1,6 @@
 <img src="img/getgazlogoagain.png"/>
 
-A finding stations application powered by Vue
+Haul app and GetGaz! Tired of small minded travel stop maps? This is for you. Built trucker tough, this gas station application will tell you exactly what to expect for every leg of your journey. Powered by Vue.
 
 ## Getting Started
 
@@ -14,19 +14,19 @@ A finding stations application powered by Vue
 ### Installing
 
 1. Please fork our master repository.
-2. Please clone your forked repository.
+2. Now clone your forked repository.
 
 ```
 $ git clone https://github.com/{your user name}/getgaz_vue.git
 ```
 
-2. Setting our master branch as upstream master.
+2. Everytime we update, we want to make sure you have the latest version. So set up our master branch as upstream master.
 
 ```
 $ git remote add upstream https://github.com/getgaz/getgaz_vue
 ```
 
-3. Run yarn install
+3. Be sure to install your depencies with yarn install command.
 
 ```
 $ yarn install
@@ -34,7 +34,7 @@ $ yarn install
 
 ### Creating Schema
 
-Run yarn migrate.
+Feeling frisky and want to create your own queries? Run yarn migrate.
 
 ```
 $ yarn migrate
@@ -42,7 +42,7 @@ $ yarn migrate
 
 ### Rollback
 
-Run yarn rollback.
+Make a mistake? Run yarn rollback.
 
 ```
 $ yarn rollback
