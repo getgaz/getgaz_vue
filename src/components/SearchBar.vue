@@ -75,7 +75,7 @@ export default {
     },
 
     onClickSearch: function() {
-      let result = this.$store.state.locations.slice();
+      let result = this.$store.state.allLocations.slice();
 
       if (this.selectedState !== "") {
         result = result.filter(location => {

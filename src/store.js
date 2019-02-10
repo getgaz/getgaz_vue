@@ -7,6 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     locations: [],
+    allLocations: [],
     center: { lat: 37.7392, lng: -99.9903 },
     zoom: 4.1,
     currentLocation: {},
@@ -15,6 +16,9 @@ export default new Vuex.Store({
   mutations: {
     setLocations(state, locations) {
       state.locations = locations;
+    },
+    setAllLocations(state, locations) {
+      state.allLocations = locations;
     },
     setFilters(state, filters) {
       state.filters = filters;
@@ -43,6 +47,7 @@ export default new Vuex.Store({
           defaultAnimation: 2
         }));
         commit("setLocations", markers);
+        commit("setAllLocations", markers);
       } catch (err) {
         console.error(err);
       }
