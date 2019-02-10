@@ -6,8 +6,7 @@
     <div class="card-body bg-dark">
       <div class="input-group mb-3">
         <div class="select-locations">
-          <span class="title-locations">Locations:</span>
-          <select v-model="selectedState">
+          <select class="form-control mb-3" v-model="selectedState">
             <option disabled value>State</option>
             <option
               v-for="(stateItem, ind) in this.$store.state.filters.states"
@@ -15,7 +14,7 @@
             >{{ stateItem.state }}</option>
           </select>
           
-          <select v-model="selectedCity">
+          <select class="form-control mb-3" v-model="selectedCity">
             <option disabled value>City</option>
             <option
               v-for="(cityItem, ind) in this.$store.state.filters.cities"
@@ -23,7 +22,7 @@
             >{{ cityItem.city }}</option>
           </select>
           
-          <select v-model="selectedHighway">
+          <select class="form-control mb-3" v-model="selectedHighway">
             <option disabled value>Highway</option>
             <option
               v-for="(highwayItem, ind) in this.$store.state.filters.highways"
@@ -33,7 +32,11 @@
         </div>
       </div>
       <div class="input-group-append">
-        <button class="btn-btn-outline-secondary" type="button" v-on:click="onClickSearch">search</button>
+        <button
+          class="btn btn-outline-light btn-block"
+          type="button"
+          v-on:click="onClickSearch"
+        >search</button>
       </div>
     </div>
   </div>
@@ -98,17 +101,6 @@ export default {
 </script>
 
 <style>
-.title-location {
-  font-family: sans-serif;
-}
-.btn-btn-outline-secondary {
-  background-color: #333;
-  color: #fff;
-}
-.btn-btn-outline-secondary:hover {
-  background-color: yellow;
-  color: #000;
-}
 .bg-orange {
   background-color: #d8b800;
 }
